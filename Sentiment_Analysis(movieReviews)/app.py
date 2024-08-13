@@ -5,8 +5,8 @@ import streamlit as st
 
 
 
-model = pk.load(open('model.pkl','rb'))
-scaler = pk.load(open('scaler.pkl','rb'))
+model = pk.load(open('Sentiment_Analysis(movieReviews)/model.pkl','rb'))
+scaler = pk.load(open('Sentiment_Analysis(movieReviews)/scaler.pkl','rb'))
 review = st.text_input('Enter the Movie Review')
 
 if st.button('predict'):
